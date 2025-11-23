@@ -44,7 +44,7 @@
             <tr>
               <td><?=$orders['inv_number']?></td>
               <td><?=$orders['cus_fname']?></td>
-              <td><?=$orders['inv_date']?></td>
+              <td><?= date("d/m/Y", strtotime($orders['inv_date'])) ?></td>
               <td><?=$orders['inv_subtotal']?></td>
               <td><?=$orders['inv_tax']?></td>
               <td><?=$orders['inv_total']?></td>
